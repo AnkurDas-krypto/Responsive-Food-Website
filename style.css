@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 56px;
+}
+
+
+
+#logo{
+    margin: 30px 26px;
+
+}
+
+#logo img{
+    margin: 0px 10px;
+    height: 50px;
+
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+
+    
+    
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 2.0rem;
+    
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color:white;
+    border-radius: 20px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 20px;
+    height: 630px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+    
+}
+
+.h-primary{
+    font-size: 3rem;
+    padding: 20px;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Satisfy', cursive;
+}
+
+.btn{
+    padding: 2px 30px;
+    background-color: whitesmoke;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 24px;
+    margin: 17px;
+    font-size: 1.3rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.btn:hover{
+    color:white;
+    background-color: black;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 3px 6px;
+    margin: 2px 3px;
+    background-color: rgb(216, 195, 195);
+}
+#services .box img{
+    display: block;
+    height: 116px;
+    margin: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+#services .box p{
+    font-family: 'Satisfy', cursive;
+}
+
+/* client section */
+#client-section{
+    height: 338px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 170px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#client-section::before{
+    content: "";
+    background: url('../bg3.jpg');
+    position: absolute;
+    width: 100%;
+    height: 46%;
+    z-index: -1;
+    opacity: 0.6;    
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px 20px;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+   
+
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+    font-family: 'Amatic SC', cursive;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
